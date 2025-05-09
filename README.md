@@ -33,7 +33,7 @@ A Proof of concept for a text-based top-down adventure game with an LLM acting a
      ```bash
      ollama run <model-name>
      ```
-   - Update the `MODEL` variable in `lm_com.py` to match your chosen model
+   - Update the `MODEL` variable in `lm_com.py` to match your chosen model, modify the default "options" parameters to those recommended with that model.
 
 ## How to Play
 
