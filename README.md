@@ -1,6 +1,7 @@
-# LLM-Powered Text Adventure
+# Proof of concept for an LLM-Powered RPG Adventure Game
 
-A Proof of concept for a text-based adventure game with an LLM acting as the Game Master to determine action outcomes.
+A Proof of concept for a text-based top-down adventure game with an LLM acting as the Game Master to determine action outcomes.
+![python3 13_Ny2Knm6VyP](https://github.com/user-attachments/assets/09f78b6b-fa4b-4d06-a74c-2ce317eeec6e)
 
 ## Installation
 
@@ -63,9 +64,11 @@ The game uses an LLM to interpret your actions and determine outcomes. When in "
 - `open the rusty door with a dagger`
 - `clean dust from table`
 
+Your character might need to be at a close proximity to an object to interact with it.
+
 ## Future features
 
-* trade system
-* two-way interaction update
-
-more to come.
+* support trade.
+* two-way interaction updates.
+* dialog system.
+* ...
