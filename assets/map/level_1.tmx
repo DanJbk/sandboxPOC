@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#323232" nextlayerid="6" nextobjectid="32">
+ <tileset firstgid="1" source="../../tilesets/1bit/1-bit pixel.tsx"/>
+ <layer id="1" name="on_ground" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,1073742071,1610612982,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,0,0,0,
+0,0,0,0,0,0,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,0,0,0,
+0,0,0,0,104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,17,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,17,0,0,0,
+0,0,0,0,0,0,0,0,736,0,0,0,0,621,0,0,0,0,0,0,0,0,0,2,0,17,17,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,17,17,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,0,17,17,0,0,0,
+0,310,310,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,17,0,0,0,
+0,310,310,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,17,17,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,17,0,0,0,
+0,0,0,8,7,17,17,8,8,0,0,0,0,0,17,17,690,0,0,0,0,0,0,0,0,17,17,0,0,0,
+0,0,0,0,0,17,17,0,0,0,0,0,0,0,17,17,0,0,0,0,0,0,0,0,0,17,17,0,0,0,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,0,0,0,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="collision" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,543,0,0,0,0,0,0,0,0,737,0,0,0,0,746,747,748,0,0,0,0,0,0,0,0,
+0,0,0,153,153,592,0,0,0,0,0,0,0,0,0,394,692,0,2147484204,799,151,749,0,360,0,0,0,0,0,0,
+0,0,0,0,0,641,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+844,844,844,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+844,794,844,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+894,843,894,0,0,0,0,0,0,0,0,738,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,641,0,0,0,0,2147484189,542,698,738,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,153,153,153,153,0,0,0,0,638,638,2147484189,0,641,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+153,153,153,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,946,0,0,0,0,0,0,0,0,0,
+0,0,0,746,589,747,747,747,748,0,0,0,746,747,747,747,589,748,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,638,638,638,638,638,638,0,0,0,638,638,638,638,638,638,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,638,591,638,638,638,638,0,0,0,638,639,638,638,638,638,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,150,638,638,638,496,638,638,150,0,0,638,638,548,638,638,638,514,0,0,256,2147483904,0,0,0,0,0,0,0,
+0,0,150,0,0,0,0,0,0,150,0,0,0,0,0,0,690,0,0,0,0,1073742080,3221225728,0,0,0,0,0,0,105,
+0,0,150,150,150,0,0,150,150,150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,105,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,52,0,0,0,0,0,0,0,0,0,0,0,52,0,0,0,0,0,0,0,52,0,0,0,0,105,
+0,0,0,0,0,0,0,52,0,0,0,52,0,0,0,0,0,0,52,0,0,52,0,0,0,0,0,52,0,0
+</data>
+ </layer>
+ <layer id="3" name="above_ground" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,674,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,674,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,543,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,592,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,543,0,0,0,0,105,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,315,0,674,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,674,0,0,0,0,0,0,0,0,0,0,674,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="npcs" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,653,0,0,0,0,0,179,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,423,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,174,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,77,0,0,0,0,0,0,0,0,0,0,2147484271,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="metadata">
+  <object id="1" name="witch" x="274.125" y="35.5" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="_objective" value="would like ingridients for her potions"/>
+    <property name="inventory" value="potion of enlargening, potion of shrinking, potion of change to stone, potion of speech"/>
+    <property name="mental_state" value="slightly frustrated"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="3" name="skull of a bull" x="226.432" y="19.2955" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="bone"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="5" name="cauldron" x="258" y="35.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="inventory" value="water"/>
+    <property name="material" value="iron"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="6" name="chair" x="242.75" y="36.5" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="wood"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="7" name="minecart" x="178.25" y="34.5" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="iron"/>
+    <property name="mobility" value="stuck due to rust"/>
+    <property name="size" value="regular"/>
+    <property name="weight" value="extremely heavy"/>
+   </properties>
+  </object>
+  <object id="8" name="monster" x="49.9167" y="67.0833" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="inventory" value="key to the tower"/>
+    <property name="mental_state" value="hungry"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="9" name="rock" x="66.5833" y="97.4167" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="stone"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="10" name="web" x="178.917" y="98.4167" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="spider web"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="11" name="string" x="195.25" y="115.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="string"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="12" name="web" x="211.917" y="114.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="spider web"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="13" name="bone" x="210.917" y="131.417" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="bone"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="14" name="alien" x="338.583" y="147.083" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="_objective" value="would like items to help investigate earth"/>
+    <property name="inventory" value="gravity gun"/>
+    <property name="mental_state" value="??"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="15" name="alien spaceship" x="322.25" y="147.417" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="locked" value="locked by alien means"/>
+    <property name="material" value="alien metal"/>
+    <property name="size" value="large"/>
+   </properties>
+  </object>
+  <object id="16" name="iron grating" x="258.25" y="226.417" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="location" value="on ground, covering a manhole"/>
+    <property name="material" value="iron"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="17" name="man" x="97.9167" y="243.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="_objective" value="hungry, would like someone to cut the grass on the lawn, it's far too long"/>
+    <property name="inventory" value=" "/>
+    <property name="material" value="human"/>
+    <property name="mental_state" value="slightly frustrated"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="18" name="human skeleton" x="131.25" y="132.417" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="bone"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="19" name="grass" x="66.25" y="227.417" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="grass"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="20" name="grass" x="50.25" y="227.083" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="grass"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="21" name="grass" x="113.583" y="227.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="grass"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="22" name="grass" x="130.25" y="227.417" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="grass"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="23" name="cabages" x="34.6136" y="179.295" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="24" name="cabages" x="19.1591" y="179.841" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="25" name="cabages" x="18.7955" y="194.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="26" name="cabages" x="34.7955" y="195.114" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="27" name="skull" x="370.795" y="210.932" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="_objective" value="would like friends"/>
+    <property name="inventory" value="fish, fishing rod"/>
+    <property name="material" value="human"/>
+    <property name="mental_state" value="content"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="28" name="sign" x="370.75" y="35.5" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="wood"/>
+    <property name="size" value="regular"/>
+    <property name="writing" value="&quot;witches hut! beware!&quot;"/>
+   </properties>
+  </object>
+  <object id="29" name="grass" x="354.25" y="35.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="false"/>
+    <property name="material" value="grass"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="30" name="skull" x="275.25" y="240.75" width="11.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="_objective" value="would like friends"/>
+    <property name="inventory" value="monster snacks"/>
+    <property name="material" value="bone"/>
+    <property name="mental_state" value="bored and lonely"/>
+    <property name="size" value="regular"/>
+   </properties>
+  </object>
+  <object id="31" name="player" x="2.43182" y="258.568" width="11.5" height="10.5"/>
+ </objectgroup>
+</map>

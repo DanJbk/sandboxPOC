@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#323232" nextlayerid="7" nextobjectid="30">
+ <tileset firstgid="1" source="../../tilesets/1bit/1-bit pixel.tsx"/>
+ <layer id="1" name="on_ground" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,6,0,0,
+0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6,0,0,7,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,
+0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,6,0,0,0,0,
+0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,3,0,0,8,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,2,0,0,0,0,0,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,0,0,0,0,0,0,0,0,0,0,0,0,0,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,0,0,0,0,0,7,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,17,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,17,17,17,17,17,17,17,17,0,0,0,0,0,0,
+0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,17,17,17,17,17,17,17,17,17,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,2,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,
+0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,7,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,
+0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+</data>
+ </layer>
+ <layer id="2" name="collision" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,542,638,638,638,638,638,638,2147484189,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,266,0,0,0,0,0,541,638,638,638,638,638,638,638,638,542,542,0,0,0,0,0,0,0,0,0,0,
+0,0,0,315,0,0,0,0,541,638,638,638,639,638,548,638,638,638,638,638,2147484189,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,736,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,746,747,747,747,748,150,151,150,150,150,150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,844,844,844,844,844,0,0,454,0,0,150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,844,846,791,846,844,0,453,352,2147484101,0,150,0,0,0,0,0,0,0,0,0,256,2684354815,2684354815,2684354815,2684354815,
+0,0,0,0,0,0,739,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,254,254,254,254,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,344,0,0,0,0,0,0,255,254,254,254,254,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,254,254,254,254,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,254,254,254,254,
+0,0,0,0,0,153,153,153,153,153,153,153,153,0,0,0,0,0,0,0,0,0,0,0,0,255,254,254,254,254,
+0,0,0,0,0,153,0,0,687,0,0,688,153,0,0,0,0,0,0,0,0,0,0,0,0,255,254,254,254,254,
+0,0,0,0,0,153,0,688,0,688,0,0,153,0,0,0,0,0,0,0,0,0,0,0,0,1610612992,1610612991,1610612991,1610612991,1610612991,
+0,0,0,0,0,153,0,0,0,0,0,0,153,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,153,0,0,688,0,689,688,153,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,153,0,0,0,0,0,0,153,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,153,153,154,153,202,153,153,153,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="above_ground" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,916,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,2147484056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,943,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="npcs" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,227,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,319,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="metadata">
+  <object id="3" name="shop keeper" x="130.5" y="128" width="11" height="15">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="general impression" value="a suspicious looking fellow rocking side to side"/>
+    <property name="inventory" value="key to inn"/>
+   </properties>
+  </object>
+  <object id="7" name="knight" x="210" y="51" width="10.5" height="10.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="inventory" value="sword, shield, helmet"/>
+    <property name="mental_state" value="too afraid to enter the dungeon"/>
+   </properties>
+  </object>
+  <object id="11" name="lone traveler" x="226.75" y="115.75" width="10.5" height="9.5">
+   <properties>
+    <property name="_npc" type="bool" value="true"/>
+    <property name="inventory" value="a purse full of gold coins"/>
+    <property name="mental_state" value="the traverler is distracted and worried"/>
+   </properties>
+  </object>
+  <object id="12" name="torch" x="98" y="128.5" width="11" height="15">
+   <properties>
+    <property name="apperance" value="dusty"/>
+    <property name="lite" type="bool" value="false"/>
+    <property name="material" value="made from simple redwood"/>
+   </properties>
+  </object>
+  <object id="14" name="doorway to inn" type="doorway" x="113.25" y="115.25" width="13.5" height="11.5">
+   <properties>
+    <property name="locked" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+  </object>
+  <object id="15" name="chair" type="furniture" x="178.5" y="112.5" width="11" height="15">
+   <properties>
+    <property name="bolted securely to the ground" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+  </object>
+  <object id="16" name="chair" type="furniture" x="194.5" y="96.5" width="11" height="15">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+  </object>
+  <object id="17" name="chair" type="furniture" x="210.833" y="112.5" width="11" height="15">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+  </object>
+  <object id="18" name="table" type="furniture" x="192.833" y="113.167" width="14.6667" height="15">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+  </object>
+  <object id="20" name="fence door" type="doorway" x="177.25" y="83.5833" width="13.5" height="11.5">
+   <properties>
+    <property name="locked" type="bool" value="false"/>
+    <property name="material" value="wood"/>
+    <property name="open" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="21" name="doorway to dungeon" type="doorway" x="225.25" y="34.9167" width="13.5" height="11.5">
+   <properties>
+    <property name="locked" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+  </object>
+  <object id="22" name="sign" type="object" x="289.69" y="145.386" width="13.2273" height="12.8636">
+   <properties>
+    <property name="material" value="wood"/>
+    <property name="writing on sign pointing left" value="the sign is in the shape of an arrow pointing left with the writing &quot;to lake&quot;"/>
+    <property name="writing on sign pointing right" value="the sign is in the shape of an arrow pointing right with the writing &quot;leave town&quot;"/>
+   </properties>
+  </object>
+  <object id="23" name="boat" type="transport" x="402" y="163.333" width="11.6667" height="11">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+  </object>
+  <object id="24" name="doorway to graveyard" type="doorway" x="145.25" y="290.25" width="13.5" height="11.5">
+   <properties>
+    <property name="locked" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+  </object>
+  <object id="25" name="broken fence to graveyard" type="doorway" x="113.75" y="291.25" width="13.5" height="11.5">
+   <properties>
+    <property name="integrity" value="There is a hole in the fence that is too small to squeeze through"/>
+    <property name="locked" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+  </object>
+  <object id="26" name="apple" x="65.5" y="18" width="13" height="12">
+   <properties>
+    <property name="description" value="a red apple. It looks ripe and delicious. "/>
+    <property name="location" value="attached to a tree, too high to reach by hand."/>
+   </properties>
+  </object>
+  <object id="28" name="inn sign" type="object" x="64.9375" y="114.75" width="13.8125" height="12">
+   <properties>
+    <property name="material" value="wood"/>
+    <property name="writing" value="The words &quot;Toms Inn&quot; etched into it"/>
+   </properties>
+  </object>
+  <object id="29" name="barred window" type="doorway" x="192.917" y="35.5834" width="13.5" height="11.5">
+   <properties>
+    <property name="appearance" value="the window has thick prison bars, preventing any options for through the window"/>
+    <property name="leads to" value="the dugeon"/>
+    <property name="material" value="metal"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
