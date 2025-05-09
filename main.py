@@ -82,6 +82,38 @@ class TextBox:
         return self.history[start:end]
 
 
+class OptionBox:
+    def __init__(self, options=None, coords=(0, 0), selected_index=-1):
+        self.coords = coords
+        self.options = options if options is not None else []
+        self.entity = None
+        self.box_width = 0
+        self.box_height = 0
+        self.active = False
+        self.text_height = 15
+        self.title = ""
+        self.selected_index = selected_index
+
+    def update_dimensions(self, options, linked_entity, coords, title="Options", screen_height=9000):
+        self.coords = coords
+        self.options = [{"text": o} for o in options]
+        self.entity = linked_entity
+        max_text_length = max((len(option["text"]) for option in self.options), default=0)
+        self.box_width = 10 + max_text_length * 10
+        self.box_height = 15 * (len(self.options) + (1 if title else 0))
+        self.active = True
+        self.selected_index = -1
+        self.title = title
+
+        if self.box_height + self.coords[1] + 20 > screen_height:
+            self.coords = (self.coords[0], screen_height - self.box_height - 20)
+
+    def update_selected_index(self, index):
+        self.selected_index = int(index)
+
+    def get_selected(self) -> list:
+        return [int(min(self.selected_index, len(self.options) - 1))]
+
 # ---------------------------------------------------------------
 # SYSTEMS
 # ---------------------------------------------------------------
@@ -122,11 +154,33 @@ class InputSystem:
 
                 if event.button == 1:  # Left-click
                         if clicked_entity:
-                            self.game.text_box.write_text(clicked_entity.properties.get("name", ""))
-                        self.game.text_box.turn = "player"
+                            self.game.text_box.turn = f"interact -> {clicked_entity.properties.get('name', '')}"
+                        else:
+                            self.game.text_box.turn = "player"
+                        
+                        self.game.option_box_primary.active = False
+                        
+                        
                 elif event.button == 3:  # Right-click
                     if clicked_entity:
-                        self.game.text_box.turn = f"interact -> {clicked_entity.properties.get('name', '')}"
+                        
+                        # information window
+                        self.game.option_box_primary.active = True
+                        title = clicked_entity.properties.get("name", "Options")
+                        coords = (
+                            int(clicked_entity.position.x * TILE_SIZE * scale),
+                            int(clicked_entity.position.y * TILE_SIZE * scale),
+                        )
+                        coords = (mouse_x, mouse_y)
+                        options = [f"{k}: {v}" for k, v in clicked_entity.properties.items()]
+                        clicked_entity_inventory = getattr(clicked_entity, 'inventory', [])
+                        if clicked_entity_inventory:
+                            options.append(f"Inventory:")
+                        for item in clicked_entity_inventory:
+                            options.append("   " + item.properties.get('name', '--'))
+                        self.game.option_box_primary.update_dimensions(options, clicked_entity, coords, title, self.game.screen_height)
+                    else:
+                        self.game.option_box_primary.active = False
 
             # --- KEYBOARD EVENTS ---
             elif event.type == pygame.KEYDOWN:
@@ -312,12 +366,12 @@ class Game:
 
         # Instantiate UI elements.
         self.text_box = TextBox()
-        # self.option_box_primary = OptionBox()
+        self.option_box_primary = OptionBox()
         # self.option_box_secondary = OptionBox()
         # self.option_box_thirdy = OptionBox()
         self.ui_elements = {
             "text_boxes": [self.text_box],
-            "option_boxes": [],
+            "option_boxes": [self.option_box_primary],
         }
 
         # Initialize systems.
@@ -450,7 +504,6 @@ class Game:
             
             grid_x = int(obj.x // self.render.TILE_SIZE)
             grid_y = int(obj.y // self.render.TILE_SIZE)
-            print(f"{grid_x=} {grid_y=}")
 
             tile_image = None
 

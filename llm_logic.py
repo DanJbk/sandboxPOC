@@ -108,7 +108,6 @@ class llm_logic:
 
         if len(fitting_objs) > 0:
             obj = fitting_objs[0]
-            # obj_properties = f"{', '.join([f"{k}: {v}" for k, v in obj.properties.items()  if k not in ["name", "npc"]])}".strip()
             obj_name = obj.properties["name"]
             obj_properties = get_entity_description(obj, include_inventory=False, exclude_properties=["name", "npc"], exclude_invisible_properties=True)
             prompt = dp.lookat.replace("$OBJECT_NAME", obj_name).replace(
@@ -183,7 +182,6 @@ class llm_logic:
         ]
         obj = fitting_objs[0]
         obj_index = obj_entities.index(obj)
-        # obj_properties = "\n".join([f"- {k}: {v}" for k, v in obj.properties.items()])
         obj_properties = get_entity_description(obj, include_inventory=True, exclude_properties=None, exclude_invisible_properties=False)
         
         prompt = (
