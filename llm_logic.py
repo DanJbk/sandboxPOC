@@ -11,9 +11,14 @@ class llm_logic:
     ):  # todo replace with target entity (singular)
         if text.lower().startswith("look at"):
             prompt = llm_logic.look_at_command(text, obj_entities)
+            text_output  = generate_text_stream(prompt)
+            return {"output": text_output, "type": "print", "generated": True, "target": None} 
         
         elif text.lower().startswith("look"):
-            prompt = llm_logic.look_command(text, player_entity, obj_entities)
+            prompt = llm_logic.look_command(text, player_entity, 
+                                            [obj for obj in obj_entities if 
+                                             obj.properties.get("name", "") != player_entity.properties["name"]
+            ])
             text_output  = generate_text_non_streaming(prompt)
             text_output = extract_tags(text_output, tag_name='description')
             return {"output": string_gen(text_output), "type": "print", "generated": True, "target": None} 
