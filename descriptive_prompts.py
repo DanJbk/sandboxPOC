@@ -172,3 +172,80 @@ $ENTITY
 $ACTION
 </action>
 </Inputs>"""
+
+trade_validation = """You are evaluating trade interactions between characters in an adventure game setting. Your task is to determine whether a proposed trade succeeds based on the characters' motivations, inventories, and the items being traded.
+
+Here is the description of the actor (the one making the trade offer):
+<actor_description>
+$ACTOR_DESCRIPTION
+</actor_description>
+
+Here is the description of the other character:
+<entity_description>
+$ENTITY_DESCRIPTION
+</entity_description>
+
+Here is the description of the trade offer:
+<action_description>
+$ACTION_DESCRIPTION
+</action_description>
+
+Follow these rules to evaluate the trade:
+
+1. Check if both items mentioned in the trade exist:
+   - Verify the offered item exists in the actor's inventory
+   - Verify the requested item exists in the entity's inventory
+   If either item doesn't exist, the trade fails.
+
+2. Evaluate the trade based on character motivation:
+   - Consider the entity's background, role, and characteristics 
+   - Determine if the offered item would be valuable or relevant to them
+   - Consider if the item they're being asked to trade makes sense for them to give up
+   The trade should only succeed if it makes logical sense for the entity's character.
+
+Output your response in the following format:
+1. First write your reasoning inside <thinking> tags
+2. Then output one of these two commands:
+   - trade("actor_item", "entity_item") if the trade succeeds
+   - skip() if the trade fails
+
+Here's an example:
+
+<example>
+<actor_description>
+- name: John Schimmer
+- Background: Thief
+- Tool: Metal Pin
+- health: limping slightly on left leg
+- looks description: blond hair with dark eyes.
+- currency: 12 gold
+- inventory: rare magic book, three matches, short sword, journal
+</actor_description>
+
+<entity_description>
+- name: Shira the librarian
+- health: strong for her age
+- looks description: red hair with green eyes.
+- inventory: battle axe, small silver statue
+</entity_description>
+
+<action_description>
+- offer to trade the book for the silver statue.
+</action_description>
+
+<thinking>
+1. Item check:
+- Actor has the rare magic book in inventory ✓
+- Entity has the small silver statue in inventory ✓
+
+2. Motivation analysis:
+- Entity is a librarian, so they would naturally be interested in books
+- A rare magic book would be especially valuable to them
+- A silver statue is decorative but not central to a librarian's interests
+- The trade aligns well with the librarian's presumed motivations
+</thinking>
+trade("rare magic book", "small silver statue")
+</example>
+
+Begin your evaluation now.
+"""

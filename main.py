@@ -127,7 +127,7 @@ class InputSystem:
         mouse_vector = pygame.math.Vector2(mouse_grid_pos)
         for entity in entities:
             # Assumes an entity is "clicked" if its grid position matches exactly.
-            if mouse_vector.distance_to(entity.position) == 0:
+            if mouse_vector.distance_to(round(entity.position)) == 0:
                 logger.debug(f"Entity found: {entity.properties.get('name', 'Unknown')} at {entity.position}")
                 return entity
         return None
@@ -153,7 +153,9 @@ class InputSystem:
                 clicked_entity = self.find_closest_entity((grid_x, grid_y), self.game.interactable_entities)
 
                 if event.button == 1:  # Left-click
-                        if clicked_entity:
+                        if self.game.text_box.turn.startswith("interact ->") and clicked_entity:
+                            self.game.text_box.turn = f"trade -> {clicked_entity.properties.get('name', '')}"
+                        elif clicked_entity:
                             self.game.text_box.turn = f"interact -> {clicked_entity.properties.get('name', '')}"
                         else:
                             self.game.text_box.turn = "player"

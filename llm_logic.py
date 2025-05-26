@@ -66,6 +66,22 @@ class llm_logic:
                     "property": None,
                 }
             }
+        elif turn.lower().startswith("trade"):
+            prompt, trade_target, obj_index = llm_logic.inventory_trade_command(turn, text, player_entity, obj_entities)
+            print(prompt)
+            text_output = generate_text_non_streaming(prompt)
+            trade_result = extract_called_function_args(text_output, "trade")
+
+            return {
+                "output": string_gen(text_output),
+                "text": text_output,
+                "type": "trade", 
+                "generated": False, 
+                "target": {
+                    "entity_index": obj_index,
+                    "property": trade_result,
+                }
+            }
         else:
             prompt = text
 
@@ -228,6 +244,32 @@ class llm_logic:
         )
 
         return prompt, obj_index
+
+    def inventory_trade_command(turn, text, player_entity, obj_entities):
+        # _, obj_named, _ = turn.split("->")
+        _, obj_named = turn.split("->")
+        
+        actor_desc = get_entity_description(player_entity, include_inventory=True, exclude_properties=None, exclude_invisible_properties=False)
+
+        action = text
+        obj_index = -1
+        fitting_objs = [
+            obj
+            for obj in obj_entities
+            if obj_named.strip().lower() in obj.properties.get("name", "")
+        ]
+
+        obj = None
+        obj_properties = ""
+        if len(fitting_objs) > 0:
+            obj = fitting_objs[0]
+            obj_index = obj_entities.index(obj)
+            
+            obj_properties = get_entity_description(obj, include_inventory=True, exclude_properties=None, exclude_invisible_properties=False)
+
+        prompt = dp.trade_validation.replace("$ENTITY_DESCRIPTION", obj_properties).replace("$ACTION_DESCRIPTION", action).replace("$ACTOR_DESCRIPTION", actor_desc)
+        
+        return prompt, obj, obj_index
 
 def string_gen(asting):
     yield asting
